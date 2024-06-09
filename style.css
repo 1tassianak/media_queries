@@ -1,0 +1,212 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.site{
+    background: url('bg.png') no-repeat fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    background-color: #1F242C;
+    padding: 2.5%;
+    color: #fff;
+}
+
+.logo{
+    width: 50%;
+    font-size: 1.2rem;
+    justify-content: start;
+    display: flex;
+}
+
+.menu{
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    align-items: center;
+    list-style: none;
+}
+
+.pesquisa{
+    background-color: #DC3D45;
+    border-radius: 2rem;
+    padding: 1%;
+    width: 15%;
+    /*display: flex;
+    justify-content: space-between;*/
+    display: flex;
+    align-items: center;
+}
+
+.icone{
+    padding-left: 1%;
+    font-size: 1rem !important;
+}
+
+.content{
+    width: 15%;
+    padding: 2%;
+    color: #fff;
+    position: absolute;
+    bottom: 17%;
+    right: 10%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content h1{
+    font-size: 3rem;
+}
+
+.text{
+    font-size: 0.8rem;
+}
+
+.btn{
+    margin-top: 15%;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.color{
+    background-color: #DC3D45;
+    border-radius: 0.2rem;
+    padding: 2% 6%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.decor{
+    text-decoration: underline;
+    margin-left: 15%;
+    color: #fff;
+}
+
+.redes {
+    width: 30px;
+    height: 140px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F242C;
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    transform: skewY(20deg); /*transformação que inclina o elemento no eixo X em 20 graus, as linhas verticais do elemento serão inclinadas para a direita*/
+    transform-origin: bottom right;
+    padding: 10px;
+}
+
+.icones {
+    transform: skewY(-20deg);
+}
+
+.icones li {
+    list-style: none;
+}
+
+.icones img {
+    width: 24px;
+    margin: 5px;
+}
+
+/*MEDIA QUERIES*/
+
+/* Default layout for small devices */
+@media (max-width: 575px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .menu ul li {
+        
+        box-sizing: border-box;
+        padding-top: 1%;
+    }
+
+    .pesquisa {
+        margin-top:1%;
+    }
+    .menu .pesquisa {
+        width: 40%;
+        padding: 2%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .menu .pesquisa li {
+        width: auto;
+    }
+
+    .menu .pesquisa .icone {
+        margin-left: auto;
+    }
+
+    .content{
+        width: 60%;
+        padding: 2%;
+        position: absolute;
+        text-align: left;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .menu ul {
+        flex-direction: row;
+    }
+
+    .menu .pesquisa {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .menu ul {
+        flex-direction: row;
+    }
+
+    .menu .pesquisa {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .menu ul {
+        flex-direction: row;
+    }
+
+    .menu .pesquisa {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .menu ul {
+        flex-direction: row;
+    }
+
+    .menu .pesquisa {
+        display: flex;
+        align-items: center;
+    }
+}
